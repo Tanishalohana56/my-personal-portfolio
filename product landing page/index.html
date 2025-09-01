@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartX Watch</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<button id="backToTop" onclick="scrollToTop()">&#8593;
+</button>
+<header>
+  <div class="container">
+    <div class="logo">SmartX</div>
+    <nav id="navbar">
+      <a href="#features">Features</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#models">Models</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </div>
+</header>
+<section class="hero">
+  <div class="container hero-grid fade-in">
+    <div class="hero-text">
+      <h1>SmartX Watch</h1>
+      <p>The most advanced smartwatch of 2025 – style, health & AI in one wrist.</p>
+      <a href="#pricing" class="btn">Buy Now</a>
+      <a href="#features" class="btn secondary-btn">Learn More</a>
+    </div>
+    <div class="hero-img">
+      <img src="Images/smartwatch.jpg" alt="SmartX Watch" />
+    </div>
+  </div>
+</section>
+<section id="signup" class="signup fade-in delay-1">
+  <div class="container">
+    <h2>Stay Updated</h2>
+    <p>Sign up to get exclusive offers and early access to new features!</p>
+    <form class="signup-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</section>
+<section id="features" class="features fade-in delay-1">
+  <div class="container">
+    <h2>Key Features</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <img src="Images/health.png" alt="Health Monitoring" />
+        <h3>Health Monitoring</h3>
+        <p>Real-time heart rate, SpO2, sleep cycle and calorie tracking.</p>
+      </div>
+      <div class="feature">
+        <img src="Images/gps.png" alt="GPS Navigation" />
+        <h3>GPS Navigation</h3>
+        <p>Smart maps & accurate route tracking with offline mode.</p>
+      </div>
+      <div class="feature">
+        <img src="Images/WaterResistant.png" alt="Water Resistant" />
+        <h3>Water Resistant</h3>
+        <p>Swim-ready up to 50m. Rain or sweat? No problem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials fade-in delay-2">
+  <div class="container">
+    <h2>What Users Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Areeba" />
+        <p>"This watch changed how I manage my day – fitness + smart assistant in one."</p>
+        <h4>- Areeba</h4>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Hamza" />
+        <p>"Battery life is amazing, and the display is super sharp. A must-have gadget."</p>
+        <h4>- Hamza</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="models" class="gallery fade-in delay-2">
+  <div class="container">
+    <h2>Choose Your Style</h2>
+    <div class="gallery-grid">
+      <div class="watch-card" onclick="filterModels('strap')">
+        <img src="Images/classic black.png" alt="Black SmartX Watch">
+        <p>Smart Strap</p>
+      </div>
+      <div class="watch-card" onclick="filterModels('chain')">
+        <img src="Images/silverwatch.png" alt="Silver SmartX Watch">
+        <p>Metal Chain</p>
+      </div>
+      <div class="watch-card" onclick="filterModels('belt')">
+        <img src="Images/Rose-Gold.png" alt="Rose Gold SmartX Watch">
+        <p>Leather/Belt</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="product-variants fade-in delay-2">
+  <div class="container">
+    <h2>Choose Your SmartX Model</h2>
+
+    <div class="style-filters">
+      <button onclick="filterModels('all')">All</button>
+      <button onclick="filterModels('strap')">Smart Strap</button>
+      <button onclick="filterModels('chain')">Metal Chain</button>
+      <button onclick="filterModels('belt')">Leather/Belt</button>
+    </div>
+
+    <div class="variant-grid">
+      <!-- Smart Strap -->
+      <div class="variant-card" data-style="strap">
+        <img src="Images/image1.png" alt="Black Strap" />
+        <h3>SmartX Active (Black Strap)</h3>
+        <p class="price">Rs. 24,999</p>
+        <button class="btn cart-btn">Buy Now</button>
+      </div>
+      <div class="variant-card" data-style="strap">
+        <img src="Images/image2.png" alt="Blue Strap" />
+        <h3>SmartX Active (Blue Strap)</h3>
+        <p class="price">Rs. 25,499</p>
+        <button class="btn cart-btn">Buy Now</button>
+      </div>
+      <!-- Metal Chain -->
+      <div class="variant-card" data-style="chain">
+        <img src="Images/images3.jpg" alt="Silver Chain" />
+        <h3>SmartX Elegance (Silver Chain)</h3>
+        <p class="price">Rs. 26,499</p>
+        <button class="btn cart-btn">Buy Now</button>
+      </div>
+      <div class="variant-card" data-style="chain">
+        <img src="Images/images4.png" alt="Gold Chain" />
+        <h3>SmartX Elegance (Gold Chain)</h3>
+        <p class="price">Rs. 27,499</p>
+        <button class="btn cart-btn">Buy Now</button>
+      </div>
+      <!-- Leather Belt -->
+      <div class="variant-card" data-style="belt">
+        <img src="Images/image5.png" alt="Rose Gold" />
+        <h3>SmartX Luxe (Rose Gold)</h3>
+        <p class="price">Rs. 27,999</p>
+        <button class="btn cart-btn">Buy Now</button>
+      </div>
+      <div class="variant-card" data-style="belt">
+        <img src="Images/image6.jpg" alt="Navy Leather" />
+        <h3>SmartX Luxe (Navy Leather)</h3>
+        <p class="price">Rs. 28,499</p>
+        <button class="btn cart-btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="pricing" class="pricing fade-in delay-3">
+  <div class="container">
+    <h2>Unbox the Future on Your Wrist</h2>
+    <p>Experience innovation, elegance, and performance — starting at just <strong>Rs. 24,999</strong>.</p>
+    <ul>
+      <li>✔ Free Express Shipping Across Pakistan</li>
+      <li>✔ 1-Year Warranty with Doorstep Support</li>
+      <li>✔ Exclusive App Integration & Health Suite</li>
+    </ul>
+    <div class="price-box">
+      <h3>Rs. 24,999</h3>
+      <p>SmartX Active Edition</p>
+      <a href="#models" class="btn">Explore Models</a>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact fade-in delay-3">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Have questions or need help? We'd love to hear from you.</p>
+    <p>📧 Email: support@smartx.com</p>
+    <p>📞 Phone: +92 300 0000000</p>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 SmartX. All rights reserved.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

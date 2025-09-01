@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopEase — Modern E-Commerce</title>
+  <meta name="description" content="ShopEase — Trendy products, fast delivery, premium style." />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header>
+    <nav class="navbar container">
+      <a class="logo" href="#home">Shop<span>Ease</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+    </nav>
+  </header>
+  <section id="home" class="hero">
+    <div class="hero-bg" style="background-image: url('images/hero.jpg')"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <p class="eyebrow">New • Limited Drop</p>
+        <h1>Discover the <span>Future</span> of Shopping</h1>
+        <p class="lead">Trendy, affordable & delivered to your doorstep. Curated collections for 2025.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#products">Shop Bestsellers</a>
+          <a class="btn ghost" href="#pricing">View Plans</a>
+        </div>
+
+        <ul class="hero-features">
+          <li>Free shipping over $50</li>
+          <li>30-day returns</li>
+          <li>24/7 support</li>
+        </ul>
+      </div>
+      <div class="carousel-container hero-card">
+        <div class="carousel-slide">
+          <img src="images/mobile.png" alt="Smartphone" class="carousel-image active" />
+          <img src="images/red dress.png" alt="Red Dress" class="carousel-image" />
+          <img src="images/lamp.png" alt="Decor Lamp" class="carousel-image" />
+          <img src="images/makeupkit.png" alt="Makeup Kit" class="carousel-image" />
+        </div>
+
+        <!-- Carousel controls -->
+        <button class="carousel-btn prev-btn" aria-label="Previous Slide">‹</button>
+        <button class="carousel-btn next-btn" aria-label="Next Slide">›</button>
+        <div class="badge">Trending</div>
+      </div>
+    </div>
+  </section>
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Why Choose Us</h2>
+      <div class="grid feature-grid">
+        <div class="glass-card">
+          <img src="images/fastdelv.png" alt="Fast delivery" />
+          <h3>Fast Delivery</h3>
+          <p>Lightning-fast logistics — get orders to your door quickly.</p>
+        </div>
+        <div class="glass-card">
+          <img src="images/securep pymt.png" alt="Secure payments" />
+          <h3>Secure Payments</h3>
+          <p>Multiple payment options with full encryption and protection.</p>
+        </div>
+        <div class="glass-card">
+          <img src="images/247support_line.png" alt="Support" />
+          <h3>24/7 Support</h3>
+          <p>Our support team is available whenever you need help.</p>
+        </div>
+        <div class="glass-card">
+          <img src="images/return.png" alt="Easy returns" />
+          <h3>Easy Returns</h3>
+          <p>Simple and smooth returns — no stress, just shop again.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="categories" class="section">
+    <div class="container">
+      <h2>Shop by Category</h2>
+      <div class="grid category-grid">
+        <div class="glass-card category">
+          <img src="images/fashion.png" alt="Fashion" />
+          <h4>Fashion</h4>
+        </div>
+        <div class="glass-card category">
+          <img src="images/electronics.png" alt="Electronics" />
+          <h4>Electronics</h4>
+        </div>
+        <div class="glass-card category">
+          <img src="images/home.png" alt="Home" />
+          <h4>Home</h4>
+        </div>
+        <div class="glass-card category">
+          <img src="images/pro1.png" alt="Beauty" />
+          <h4>Beauty</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="products" class="section">
+  <div class="container">
+    <h2>Popular Products</h2>
+    <div class="grid product-grid">
+      <article class="product-card">
+        <div class="product-media">
+          <img src="images/red dress.png" alt="Red Dress" />
+        </div>
+        <div class="product-body">
+          <h4>Red Dress</h4>
+          <p class="price">$49</p>
+          <a class="btn primary small buy-now-btn" href="#" data-product="Red Dress|49">Buy Now</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="images/mobile.png" alt="Smartphone" />
+        </div>
+        <div class="product-body">
+          <h4>Smartphone</h4>
+          <p class="price">$599</p>
+          <a class="btn primary small buy-now-btn" href="#" data-product="Smartphone|599">Buy Now</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="images/lamp.png" alt="Decor Lamp" />
+        </div>
+        <div class="product-body">
+          <h4>Decor Lamp</h4>
+          <p class="price">$39</p>
+          <a class="btn primary small buy-now-btn" href="#" data-product="Decor Lamp|39">Buy Now</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="images/makeupkit.png" alt="Makeup Kit" />
+        </div>
+        <div class="product-body">
+          <h4>Makeup Kit</h4>
+          <p class="price">$29</p>
+          <a class="btn primary small buy-now-btn" href="#" data-product="Makeup Kit|29">Buy Now</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2>Pricing & Plans</h2>
+      <div class="grid pricing-grid">
+        <div class="glass-card pricing">
+          <h3>Basic</h3>
+          <p class="price">$0 / free</p>
+          <ul>
+            <li>Access to catalog</li>
+            <li>Standard support</li>
+          </ul>
+          <a class="btn ghost" href="#">Create Account</a>
+        </div>
+
+        <div class="glass-card pricing featured">
+          <div class="ribbon">Best value</div>
+          <h3>Premium</h3>
+          <p class="price">$9.99 / month</p>
+          <ul>
+            <li>15% off sitewide</li>
+            <li>Free express shipping</li>
+          </ul>
+          <a class="btn primary" href="#">Subscribe</a>
+        </div>
+
+        <div class="glass-card pricing">
+          <h3>Business</h3>
+          <p class="price">$49 / month</p>
+          <ul>
+            <li>Bulk discounts</li>
+            <li>Dedicated support</li>
+          </ul>
+          <a class="btn ghost" href="#">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="reviews" class="section">
+    <div class="container">
+      <h2>What Customers Say</h2>
+      <div class="grid review-grid">
+        <div class="glass-card review">
+          <blockquote>"Amazing products and quick delivery!"</blockquote>
+          <cite>— Aisha Q.</cite>
+        </div>
+
+        <div class="glass-card review">
+          <blockquote>"Top-notch customer service."</blockquote>
+          <cite>— Omar S.</cite>
+        </div>
+
+        <div class="glass-card review">
+          <blockquote>"High quality and great prices."</blockquote>
+          <cite>— Mark T.</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    id="contact"
+    class="section contact-section"
+    style="background: url('images/contact-bg.jpg') center/cover no-repeat;"
+  >
+    <div class="container">
+      <h2>Stay in Touch</h2>
+      <form id="newsletterForm" class="contact-form" novalidate>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Your email"
+          required
+          aria-label="Email address"
+        />
+        <button class="btn primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-section">
+        <a class="logo small" href="#">Shop<span>Ease</span></a>
+        <p>© 2025 ShopEase. All rights reserved.</p>
+        <p class="tagline">Secure payments • Fast shipping • 24/7 support</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <button id="scrollToTopBtn" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

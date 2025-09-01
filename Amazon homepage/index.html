@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Redesign</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <div class="logo">amazon</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#deals">Today's Deals</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#support">Customer Service</a></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <label class="switch">
+        <input type="checkbox" id="modeToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+  <section class="hero" id="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Shop Big Save Bigger.</h1>
+        <p>Explore top deals and exclusive offers just for you.</p>
+        <button class="hero-btn">Shop Now</button>
+      </div>
+    </div>
+  </section>
+  <section class="featured" id="featured">
+    <h2>Featured Products</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="assests/products/product.jpg" alt="Smartphone" />
+        <p>Smartphone</p>
+        <button class="add-to-cart" data-product="Smartphone">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="assests/products/product2.jpg" alt="Headphones" />
+        <p>Headphones</p>
+        <button class="add-to-cart" data-product="Headphones">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="assests/products/product3.jpg" alt="Books" />
+        <p>Books</p>
+        <button class="add-to-cart" data-product="Books">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="assests/products/product4.jpg" alt="Laptop" />
+        <p>Laptop</p>
+        <button class="add-to-cart" data-product="Laptop">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="assests/products/product5.jpg" alt="Gaming Console" />
+        <p>Gaming Console</p>
+        <button class="add-to-cart" data-product="Gaming Console">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="assests/products/product6.jpg" alt="Mini Fridge" />
+        <p>Mini Fridge</p>
+        <button class="add-to-cart" data-product="Mini Fridge">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="assests/products/product7.jpg" alt="Makeup Kit" />
+        <p>Makeup Kit</p>
+        <button class="add-to-cart" data-product="Makeup Kit">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="assests/products/product8.jpg" alt="Sneakers" />
+        <p>Sneakers</p>
+        <button class="add-to-cart" data-product="Sneakers">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="assests/products/product9.jpg" alt="Cookware Set" />
+        <p>Non-Stick Cookware Set</p>
+        <button class="add-to-cart" data-product="Non-Stick Cookware Set">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section class="featured" id="deals">
+    <h2>🔥 Today's Deals</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/echodot.jpg" alt="Echo Dot">
+        <p>Echo Dot - 50% OFF</p>
+        <button class="add-to-cart" data-product="Echo Dot">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="images/tablet.jpg" alt="Tablet">
+        <p>Tablet - Limited Offer</p>
+        <button class="add-to-cart" data-product="Tablet">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section class="featured" id="books">
+    <h2>📚 Books</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/Fiction Novel.jpg" alt="Fiction Novel">
+        <p>Fiction Novel</p>
+        <button class="add-to-cart" data-product="Fiction Novel">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section class="featured" id="support">
+    <h2>🛠️ Customer Service</h2>
+    <p style="max-width: 600px; margin: 0 auto;">
+      Need help? Our support team is available 24/7 to assist you with orders, returns, and more.
+    </p>
+    <div style="margin-top: 30px;">
+      <p><strong>📧 Email:</strong> <a href="mailto:support@amazonclone.com">support@amazonclone.com</a></p>
+      <p><strong>📞 Phone:</strong> <a href="tel:+920123456789">+92 012 345 6789</a></p>
+    </div>
+    <button class="hero-btn" style="margin-top: 20px;" onclick="window.location.href='mailto:support@amazonclone.com'">
+      Contact Us
+    </button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
